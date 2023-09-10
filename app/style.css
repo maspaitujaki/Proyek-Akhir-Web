@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Libre+Bodoni:ital,wght@1,500&family=Oswald:wght@500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.jumbotron {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFBB5C;
+  gap: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1,h2 {
+  margin: 0;
+}
+
+.title h1 {
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color: #C63D2F;
+  text-transform: uppercase;
+}
+.title h2 {
+  font-size: 60px;
+  text-shadow: 2px 2px black;
+  font-family: 'Libre Bodoni', sans-serif;
+  color: white;
+  letter-spacing: .15rem;
+}
+
+#menu {
+  background-color: #FF9B50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#menu-cards-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  background-color: white;
+  position: relative;
+  max-width: 200px;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 2px black;
+  transition: all .2s ease-in-out;
+}
+
+.card img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-info {
+  padding: 1rem;
+  font-size: 20px;
+  font-family: 'Libre Bodoni', sans-serif;
+  text-align: center;
+  color: #C63D2F;
+}
+
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#sticky-nav {
+  background-color: #E25E3E;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+#sticky-nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+#sticky-nav li {
+  list-style-type: none;
+}
+
+#sticky-nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+
+  color: white;
+}
+
+#sticky-nav a:hover {
+  font-weight: bold;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* .sticky + .content {
+  padding-top: 102px;
+} */
+
+@media screen and (max-width: 768px) {
+  .title {
+    text-align: left;
+  }
+}
