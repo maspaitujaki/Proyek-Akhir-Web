@@ -2,53 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app/style.css">
+  <script
+      src="https://kit.fontawesome.com/6ab618dcf5.js"
+      crossorigin="anonymous"
+    ></script>
   <title>Resep Masakan Keluarga Sehat</title>
 </head>
 <body>
   <header>
-    <div class="jumbotron">
-      <div class="title">
-        <h1 class="title-1">
-          Resep Masakan
-        </h1>
-        <h2 class="title-2">
-          Keluarga Sehat
-        </h2>
-      </div>
+    <div id="home" class="jumbotron">
+      <h1 class="title-1">
+        Resep Masakan
+      </h1>
+      <h2 class="title-2">
+        Keluarga Sehat
+      </h2>
     </div>
-
     <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="https://www.unicef.org/indonesia/media/14876/file/Kumpulan%20Resep%20Makanan%20Keluarga%20Sehat%20Seri%202.pdf" target="_blank">Resep Lainnya </a><i class="fa-solid fa-arrow-up-right-from-square"></i></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="content">
+      <article id="ayam_taliwang">
+        <h2>Ayam Taliwang</h2>
+        <img src="assets/images/ayam_taliwang.png" alt="Ayam Taliwang">
+        <section>
+          <h3>Bahan</h3>
+          <div class="bahan">
+            <ul>
+              <li><input type="checkbox"/>4 potong ayam &#40;2 dada, 2 paha atas dan bawah&#41;</li>
+              <li><input type="checkbox"/>1 jeruk nipis, peras airnya</li>
+              <li><input type="checkbox"/>2 batang serai, geprek</li>
+              <li><input type="checkbox"/>2 ruas lengkuas, geprek</li>
+              <li><input type="checkbox"/>100 ml santan</li>
+              <li><input type="checkbox"/>4 lembar daun jeruk</li>
+              <li><input type="checkbox"/>Garam, lada secukupnya</li>
+              <li><input type="checkbox"/>Daun pisang secukupnya &#40;jika ingin dibakar, bukan dioven&#41;</li>
+            </ul>
+            <ul>
+              <p>Bumbu halus:</p>
+              <li><input type="checkbox"/>6 siung bawang merah</li>
+              <li><input type="checkbox"/>3 siung bawang putih</li>
+              <li><input type="checkbox"/>2 cabai merah besar (keriting jika suka pedas)</li>
+              <li><input type="checkbox"/>2 cabai rawit</li>
+              <li><input type="checkbox"/>1 ruas kencur</li>
+              <li><input type="checkbox"/>Sedikit terasi sangrai</li>
+              <li><input type="checkbox"/>6 butir kemiri</li>
+              <li><input type="checkbox"/>1 tomat merah</li>
+            </ul>
+          </div>
+        </section>
+        <section class="prosedur">
+          <h3>Cara membuat</h3>
+          <ol>
+            <li>Lumuri ayam dengan air jeruk nipis, tunggu 30 menit. Bilas.</li>
+            <li>Bumbu dihaluskan, tumis dengan sedikit minyak atau sangrai dengan api kecil.</li>
+            <li>Masukkan serai, lengkuas, daun jeruk dan santan. Beri garam dan lada secukupnya. Masak hingga bumbunya agak kering.</li>
+            <li>Panggang dalam oven, atau bakar dengan dibungkus daun pisang sampai harum.</li>
+          </ol>
+        </section>
+      </article>
+      <hr/>
+      <article id="bubur_manado">
+        <h2>Bubur Manado</h2>
+        <img src="assets/images/bubur_manado.png" alt="Bubur Manado">
+        <section>
+          <h3>Bahan</h3>
+          <div class="bahan">
+            <ul>
+              <li><input type="checkbox"/>1 mangkuk nasi (lebih cepat membuatnya daripada dimulai dengan beras)</li>
+              <li><input type="checkbox"/>1 jagung manis, disisir/dipipil</li>
+              <li><input type="checkbox"/>1 ubi merah, kupas, potong kotak</li>
+              <li><input type="checkbox"/>¼ labu kuning/waluh yang tidak terlalu besar, potong kecil</li>
+              <li><input type="checkbox"/>1 batang serai geprek</li>
+              <li><input type="checkbox"/>1 ikat kangkung (atau daun gedi), petik pilih yang muda</li>
+              <li><input type="checkbox"/>1 ikat bayam merah, petik pilih yg muda</li>
+              <li><input type="checkbox"/>1 ikat kemangi</li>
+            </ul>
+            <ul>
+              <p>Bumbu halus:</p>
+              <li><input type="checkbox"/>2 siung bawang putih</li>
+              <li><input type="checkbox"/>2 siung bawang merah</li>
+              <li><input type="checkbox"/>2 buah kemiri</li>
+              <li><input type="checkbox"/>Garam, lada secukupnya</li>
+            </ul>
+          </div>
+        </section>
+        <section class="prosedur">
+          <h3>Cara membuat</h3>
+          <ol>
+            <li>Bumbu halus diulek hingga benar-benar halus</li>
+            <li>Buat bubur dari nasi : tuang air mendidih ke dalam panci berisi nasi hingga batas air 1 ruas jari di atas nasi. Terus diaduk sambil dimasak, jangan sampai gosong. Biar air mulai susut dan bubur belum terbentuk, tambahkan lagi airnya.</li>
+            <li>Masukkan bumbu halus, jagung manis, ubi merah, labu kuning, dan serai.</li>
+            <li>Jika akan disajikan, angkat serainya, buang. Masukkan kangkung dan bayam merah sebentar.</li>
+            <li>Sajikan bubur dalam mangkuk, beri kemangi dan taburi dengan 1-2 sendok makan abon ikan.</li>
+          </ol>
+        </section>
+      </article>
+      <hr/>
+      <article id="ikan_asam">
+        <h2>Ikan Kembung Kuah Asam</h2>
+        <img src="assets/images/ikan_asam.png" alt="Ikan Kembung Kuah Asam">
+        <section>
+          <h3>Bahan</h3>
+          <div class="bahan">
+            <ul>
+              <li><input type="checkbox"/>3 ekor ikan kembung banjar</li>
+              <li><input type="checkbox"/>2 buah jeruk nipis, peras airnya</li>
+              <li><input type="checkbox"/>2 lembar daun salam</li>
+              <li><input type="checkbox"/>1 jempol lengukas, geprek</li>
+              <li><input type="checkbox"/>4 daun jeruk purut</li>
+              <li><input type="checkbox"/>8-10 belimbing wuluh, potong2</li>
+              <li><input type="checkbox"/>5 cabe rawit merah utuh</li>
+              <li><input type="checkbox"/>2-3 tangkai kemangi</li>
+              <li><input type="checkbox"/>1 batang daun bawang, rajang kasar</li>
+              <li><input type="checkbox"/>1 liter air</li>
+            </ul>
+            <ul>
+              <p>Bumbu ulek kasar:</p>
+              <li><input type="checkbox"/>6 siung bawang merah</li>
+              <li><input type="checkbox"/>3 siung bawang putih</li>
+              <li><input type="checkbox"/>1 cabe merah besar (keriting jika suka pedas)</li>
+              <li><input type="checkbox"/>1 ruas kunyit, bakar</li>
+              <li><input type="checkbox"/>1 ruas jahe</li>
+            </ul>
+          </div>
+        </section>
+        <section class="prosedur">
+          <h3>Cara membuat</h3>
+          <ol>
+            <li>Lumuri ikan kembung dengan air jeruk nipis, terutama bagian isi perutnya. Diamkan 15-30 menit.</li>
+            <li>Tumis bumbu ulek kasar dengan sedikit minyak, masukkan salam, lengkuas, serai dan daun jeruk. Tuang air, masak hingga mendidih</li>
+            <li>Masukkan ikan kembung, belimbing wuluh, cabai rawit, beri garam dan lada secukupnya.</li>
+            <li>Masak hingga matang, sebelum diangkat beri kemangi dan daun bawang iris.</li>
+          </ol>
+        </section>
+      </article>
+      <hr/>
+      <article id="pepes_ikan">
+        <h2>Pepes Ikan Patin/Dori</h2>
+        <img src="assets/images/pepes_ikan.png" alt="">
+        <section>
+          <h3>Bahan</h3>
+          <div class="bahan">
+            <ul>
+              <li><input type="checkbox"/>1 ekor ikan patin ukuran sedang potong jadi 2, atau ikan Dori 200 gr, ambil dagingnya saja bagi jadi 2</li>
+              <li><input type="checkbox"/>8-10 belimbing wuluh</li>
+              <li><input type="checkbox"/>4 daun salam</li>
+              <li><input type="checkbox"/>2 jempol lengkuas digeprek</li>
+              <li><input type="checkbox"/>10 cabai rawit utuh</li>
+              <li><input type="checkbox"/>2 tomat besar iris agak besar</li>
+              <li><input type="checkbox"/>2 batang serai, geprek</li>
+              <li><input type="checkbox"/>100 ml santan</li>
+              <li><input type="checkbox"/>2 lembar daun pisang agak lebar untuk bungkus</li>
+            </ul>
+            <ul>
+              <p>Bumbu halus:</p>
+              <li><input type="checkbox"/>6 siung bawang merah</li>
+              <li><input type="checkbox"/>3 siung bawang putih</li>
+              <li><input type="checkbox"/>1 ruas kunyit kupas, bakar</li>
+              <li><input type="checkbox"/>1 ruas jahe</li>
+              <li><input type="checkbox"/>6 butir kemiri</li>
+              <li><input type="checkbox"/>1 sendok teh ketumbar</li>
+              <li><input type="checkbox"/>Garam, lada secukupnya</li>
+            </ul>
+          </div>
+        </section>
+        <section class="prosedur">
+          <h3>Cara membuat</h3>
+          <ol>
+            <li>Bumbu halus ulek, sangrai dengan api kecil sampai harum. Boleh ditumis dengan sedikit sekali minyak jika perlu.</li>
+            <li>Aduk ikan, dan semua bahan-bahan termasuk santan dan bumbu halus.</li>
+            <li>Ambil selembar daun pisang, 1 potongan ikan dibungkus dengan isian 1 batang serai, 1 lengkuas, 2 daun salam, dan adukan bumbu. Semat dengan lidi, kukus hingga matang. Sebelum makan pepes dipanggang/dibakar sebentar hingga harum.</li>
+          </ol>
+        </section>
+      </article>
+    </div>
+    <aside>
+      <div id="author">
+        <p>Resep oleh: </p>
+        <p>Dr. Tan Shot Yen, M.hum</p>
+        <p>Bersama dengan:</p>
+        <img src="assets/images/UNICEF.png" alt="UNICEF">
+      </div>
       <div id="menu">
         <p>Mau masak apa hari ini?</p>
         <div id="menu-cards-container">
         </div>
       </div>
-      <div id="sticky-nav">
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="content">
-      <article>
-        <section class="bahan">
-
-        </section>
-        <section class="prosedur">
-
-        </section>
-      </article>
-    </div>
-    <aside>
-
     </aside>
   </main>
   <footer>
-
+    <p>Website dibuat oleh Dimas Faidh Muzaki.</p>
+    <p>Semua resep dan gambar berasal dari / milik buku berjudul <a href="https://www.unicef.org/indonesia/media/14876/file/Kumpulan%20Resep%20Makanan%20Keluarga%20Sehat%20Seri%202.pdf" target="_blank">Resep Masakan Keluarga Sehat Seri 2</a> yang ditulis oleh Dr. Tan Shot Yen, M.hum.</p>
   </footer>
 </body>
 <script src="./index.js"></script>

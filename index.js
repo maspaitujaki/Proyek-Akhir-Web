@@ -1,19 +1,23 @@
 const daftarMenu = [
   {
     nama : "Ayam Taliwang",
-    gambar : 'ayam_taliwang.png'
+    gambar : 'ayam_taliwang.png',
+    href: "#ayam_taliwang"
   },
   {
     nama : "Bubur Manado",
-    gambar : 'bubur_manado.png'
+    gambar : 'bubur_manado.png',
+    href: "#bubur_manado"
   },
   {
     nama : "Ikan Kembung Kuah Asam",
-    gambar : 'ikan_asam.png'
+    gambar : 'ikan_asam.png',
+    href: "#ikan_asam"
   },
   {
     nama : "Pepes Ikan Patin/Dori",
-    gambar : 'pepes_ikan.png'
+    gambar : 'pepes_ikan.png',
+    href: "#pepes_ikan"
   },
 ]
 
@@ -40,7 +44,7 @@ for (let i = 0; i < daftarMenu.length; i++){
 
   //Link
   const cardLink = document.createElement("a")
-  cardLink.href = "#"
+  cardLink.href = dish.href
   cardLink.classList.add("card-link")
 
   // Add to card
@@ -48,17 +52,4 @@ for (let i = 0; i < daftarMenu.length; i++){
   cardItem.appendChild(cardInfo)
   cardItem.appendChild(cardLink)
   cardsContainer.appendChild(cardItem)
-}
-
-window.onscroll = function() {myFunction()};
-
-  var sticky_nav = document.getElementById("sticky-nav");
-  var sticky = sticky_nav.offsetTop;
-
-  function myFunction() {
-    if (window.scrollY > sticky) {
-      sticky_nav.classList.add("sticky");
-    } else {
-      sticky_nav.classList.remove("sticky");
-    }
 }
